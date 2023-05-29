@@ -1,2 +1,7 @@
-# Golang-Design-Patterns
-Golang设计模式，总结一些golang常用设计模式及其源码实现
+# Golang Design Patterns
+English | [简体中文](README-CN.md)
+
+[![License](https://img.shields.io/github/license/lim-yoona/Golang-Design-Patterns)](LICENSE)
+
+Golang Design Patterns, summarizing some golang common design patterns and their code implementation.
+
