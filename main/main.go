@@ -14,4 +14,7 @@ func main() {
 
 	// 测试principle/依赖倒转原则.go
 	principle.Business()
+
+	// 测试principle/合成复用原则.go
+	principle.TestCat()
 }
