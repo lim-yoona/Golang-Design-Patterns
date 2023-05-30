@@ -11,4 +11,7 @@ func main() {
 	principle.BankBusiness(&sb)
 	principle.BankBusiness(&tb)
 	principle.BankBusiness(&gb)
+
+	// 测试principle/依赖倒转原则.go
+	principle.Business()
 }
