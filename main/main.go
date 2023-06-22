@@ -1,6 +1,9 @@
 package main
 
-import "Golang-Design-Patterns/principle"
+import (
+	"Golang-Design-Patterns/creational"
+	"Golang-Design-Patterns/principle"
+)
 
 // main.go用于测试代码
 func main() {
@@ -17,4 +20,10 @@ func main() {
 
 	// 测试principle/合成复用原则.go
 	principle.TestCat()
+
+	// 简单工厂模式
+	creational.Business()
 }
+
+// 缺点：简单工厂模式违反了开闭原则，新增加一个水果的时候需要修改工厂模块
+// 缺点：工厂类职责过重，一旦不能工作，系统收到影响
