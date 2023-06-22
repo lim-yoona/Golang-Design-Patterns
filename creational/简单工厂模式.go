@@ -59,3 +59,6 @@ func Business() {
 	ban := fac.CreateFruit("banana")
 	ban.Show()
 }
+
+// 缺点：简单工厂模式违反了开闭原则，新增加一个水果的时候需要修改工厂模块
+// 缺点：工厂类职责过重，一旦不能工作，系统收到影响
