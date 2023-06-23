@@ -26,4 +26,7 @@ func main() {
 
 	// 工厂方法模式
 	creational.FacMethod()
+
+	// 抽象工厂方法模式
+	creational.AbstractFacPattern()
 }
