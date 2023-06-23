@@ -29,4 +29,7 @@ func main() {
 
 	// 抽象工厂方法模式
 	creational.AbstractFacPattern()
+
+	// 抽象工厂方法模式New Case
+	creational.CumputerTest()
 }
