@@ -3,6 +3,7 @@ package main
 import (
 	"Golang-Design-Patterns/creational"
 	"Golang-Design-Patterns/principle"
+	"fmt"
 )
 
 // main.go用于测试代码
@@ -32,4 +33,22 @@ func main() {
 
 	// 抽象工厂方法模式New Case
 	creational.CumputerTest()
+
+	// "饿汉式"单例模式
+	sc1 := creational.GetInstance()
+	sc1.Output()
+	sc2 := creational.GetInstance()
+	if sc1 == sc2 {
+		fmt.Println("sc1==sc2")
+	}
+	sc1 = nil
+	if sc1 == sc2 {
+		fmt.Println("sc1==sc2")
+	} else {
+		fmt.Println("sc1!=sc2")
+	}
+	fmt.Println("sc1=", sc1)
+	fmt.Println("sc2=", sc2)
+	sc3 := creational.GetInstance()
+	fmt.Println("sc3=", *sc3)
 }
