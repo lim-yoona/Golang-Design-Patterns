@@ -51,4 +51,12 @@ func main() {
 	fmt.Println("sc2=", sc2)
 	sc3 := creational.GetInstance()
 	fmt.Println("sc3=", *sc3)
+
+	// 测试懒汉式并发安全单例模式
+	ins1 := creational.GetInstance1()
+	ins1.Output1()
+	ins2 := creational.GetInstance1()
+	if ins1 == ins2 {
+		fmt.Println("ins1 == ins2")
+	}
 }
