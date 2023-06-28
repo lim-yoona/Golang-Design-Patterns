@@ -1,6 +1,7 @@
 package main
 
 import (
+	"Golang-Design-Patterns/behavioral"
 	"Golang-Design-Patterns/creational"
 	"Golang-Design-Patterns/principle"
 	"fmt"
@@ -59,4 +60,7 @@ func main() {
 	if ins1 == ins2 {
 		fmt.Println("ins1 == ins2")
 	}
+
+	// 代理模式
+	behavioral.ProxyBuy()
 }
