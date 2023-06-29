@@ -63,4 +63,7 @@ func main() {
 
 	// 代理模式
 	behavioral.ProxyBuy()
+
+	// 装饰器模式
+	behavioral.DecoratorFunc()
 }
